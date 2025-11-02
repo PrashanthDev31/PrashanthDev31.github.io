@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshmi Prasanth Devarapalli - DevOps Engineer</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Dark Mode Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827; /* gray-900 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151; /* gray-700 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4b5563; /* gray-600 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 transition-colors duration-300">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-700">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white">Lakshmi Prasanth Devarapalli</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="#about" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#experience" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    <a href="#skills" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="#contact" class="bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-teal-700">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger Icon -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Close Icon (hidden by default) -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#experience" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero / About Section -->
+        <section id="about" class="py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Profile Image -->
+                    <div class="flex justify-center md:justify-start">
+                        <img class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-teal-400 shadow-lg" 
+                             src="https://placehold.co/400x400/111827/4ade80?text=LD" 
+                             alt="Profile picture of Lakshmi Prasanth Devarapalli">
+                    </div>
+                    
+                    <!-- About Me Text -->
+                    <div class="space-y-4 text-center md:text-left">
+                        <span class="text-2xl font-medium text-gray-300">Hi, I'm</span>
+                        <h1 class="text-5xl md:text-6xl font-bold text-white">Lakshmi Prasanth Devarapalli</h1>
+                        <h2 class="text-3xl font-semibold text-teal-400">Senior DevOps Engineer</h2>
+                        <p class="text-lg text-gray-300 max-w-lg mx-auto md:mx-0">
+                            DevOps Engineer with hands-on experience across AWS, Azure, and GCP, specializing in automation, CI/CD enablement, and container orchestration
+                            for both on-prem and cloud environments. Skilled in developing and deploying infrastructure solutions using Terraform, Ansible, Docker, and
+                            Kubernetes, with strong programming proficiency in Python, Java, and C#.
+                        </p>
+                        <!-- Social Links -->
+                        <div class="flex justify-center md:justify-start space-x-6 pt-4">
+                            <a href="https://github.com/PrashanthDev31" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-teal-400" title="GitHub">
+                                <span class="sr-only">GitHub</span>
+                                <!-- GitHub Icon -->
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lakshmi-prasanth-devarapalli-523b13361/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-teal-400" title="LinkedIn">
+                                <span class="sr-only">LinkedIn</span>
+                                <!-- LinkedIn Icon -->
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a href="mailto:lakshmiprasanthdevarapalli@gmail.com" class="text-gray-400 hover:text-teal-400" title="Email">
+                                <span class="sr-only">Email</span>
+                                <!-- Email Icon -->
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-white mb-12 flex items-center justify-center">
+                        <!-- Briefcase Icon -->
+                        <svg class="w-8 h-8 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Work Experience
+                    </h2>
+                    
+                    <!-- Timeline -->
+                    <div class="relative border-l-2 border-teal-400 space-y-12">
+                        
+                        <!-- Timeline Item 1 -->
+                        <div class="relative pl-10">
+                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-800"></span>
+                            <h3 class="text-xl font-semibold text-white">DevOps Engineer, AWS (Project)</h3>
+                            <p class="text-md text-gray-400">Citibank | 07/2024 - Present</p>
+                            <ul class="list-disc pl-5 space-y-2 mt-3 text-gray-300">
+                                <li>Deployed scalable AWS infrastructure using Terraform while integrating configuration management through Ansible and Git.</li>
+                                <li>Built and optimized CI/CD pipelines with Jenkins and GitHub Actions to automate deployment and testing processes.</li>
+                                <li>Managed Docker-based container images and orchestrated production workloads with Kubernetes.</li>
+                                <li>Implemented observability frameworks using Prometheus, Grafana, and PagerDuty.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Timeline Item 2 -->
+                        <div class="relative pl-10">
+                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-800"></span>
+                            <h3 class="text-xl font-semibold text-white">GCP DevOps Engineer (Project)</h3>
+                            <p class="text-md text-gray-400">Citibank | 07/2023 - 07/2024</p>
+                            <ul class="list-disc pl-5 space-y-2 mt-3 text-gray-300">
+                                <li>Built and automated CI/CD pipelines using Jenkins and GitHub Actions for on-premise and GCP hybrid environments.</li>
+                                <li>Deployed and maintained containerized workloads using Docker and Kubernetes.</li>
+                                <li>Integrated observability tools such as Prometheus, Grafana, and InfluxDB for real-time system monitoring.</li>
+                                <li>Developed Python scripts for environment automation, configuration management, and process optimization.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Timeline Item 3 -->
+                        <div class="relative pl-10">
+                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-800"></span>
+                            <h3 class="text-xl font-semibold text-white">DevOps Engineer</h3>
+                            <p class="text-md text-gray-400">Pfizer | 06/2021 - 01/2023</p>
+                            <ul class="list-disc pl-5 space-y-2 mt-3 text-gray-300">
+                                <li>Designed and managed Azure DevOps pipelines for CI/CD workflows, integrating Terraform and Ansible.</li>
+                                <li>Configured on-premises servers, network connectivity, and system patching processes.</li>
+                                <li>Supported and automated application deployments across containerized environments with Kubernetes and Helm.</li>
+                                <li>Developed PowerShell and Bash scripts for server provisioning, configuration, and automation.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
+                    <!-- CPU Icon -->
+                    <svg class="w-8 h-8 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 3c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM12 9v6h.01"></path></svg>
+                    Technical Skills
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Skill Category 1 -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-4">Cloud Providers</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Azure</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">GCP</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Category 2 -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-4">IaC & Config Management</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Terraform</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Ansible</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">CloudFormation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Category 3 -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-4">Containers & Orchestration</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Helm</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Category 4 -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-4">CI/CD</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Jenkins</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">GitHub Actions</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">GitLab CI</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Azure DevOps</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">CircleCI</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Category 5 -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-4">Monitoring & Observability</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Prometheus</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Grafana</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">PagerDuty</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">CloudWatch</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Azure Monitor</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">ELK Stack</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Category 6 -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-4">Scripting & Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Bash</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">PowerShell</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Java</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">C#</span>
+                            <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Go</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
+                    <!-- Code Icon -->
+                    <svg class="w-8 h-8 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    My Projects
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-semibold text-white mb-2"> pipeline </h3>
+                            <p class="text-gray-400 mb-4 text-sm">
+                                Jenkins CI/CD Pipeline for GKE Deployment with Microservices Application
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Terraform</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">AWS</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">GitLab CI</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-800/50 border-t border-gray-700">
+                            <a href="https://github.com/PrashanthDev31/[repo-name]" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300">
+                                View on GitHub
+                                <!-- External Link Icon -->
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-semibold text-white mb-2">[Project Name 2]</h3>
+                            <p class="text-gray-400 mb-4 text-sm">
+                                [A brief description of the project, its purpose, and the problem it solves. Keep it to 2-3 sentences.]
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Kubernetes</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Python</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Prometheus</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-800/50 border-t border-gray-700">
+                            <a href="httpsm://github.com/PrashanthDev31/[repo-name]" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300">
+                                View on GitHub
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-semibold text-white mb-2">[Project Name 3]</h3>
+                            <p class="text-gray-400 mb-4 text-sm">
+                                [A brief description of the project, its purpose, and the problem it solves. Keep it to 2-3 sentences.]
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">GitHub Actions</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Docker</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Bash</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-800/50 border-t border-gray-700">
+                            <a href="https://github.com/PrashanthDev31/[repo-name]" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300">
+                                View on GitHub
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+s
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6 flex items-center justify-center">
+                    <!-- Send Icon -->
+                    <svg class="w-8 h-8 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    Get In Touch
+                </h2>
+                <p class="text-lg text-gray-300 mb-8 max-w-md mx-auto">
+                    I'm always open to discussing new opportunities, projects, or just chatting about tech.
+                    Feel free to reach out!
+                </p>
+                <a href="mailto:lakshmiprasanthdevarapalli@gmail.com" 
+                   class="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-teal-700 transition-colors duration-300 shadow-lg">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500">© 2025 Lakshmi Prasanth Devarapalli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = menuButton.querySelector('svg:first-child');
+            const closeIcon = menuButton.querySelector('svg:last-child');
+            
+            // Toggle mobile menu
+            menuButton.addEventListener('click', () => {
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                hamburgerIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
