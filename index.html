@@ -66,6 +66,7 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex md:items-center md:space-x-6">
                     <a href="#about" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#achievements" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Achievements</a>
                     <a href="#experience" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
                     <a href="#skills" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
                     <a href="#projects" class="text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
@@ -93,6 +94,7 @@
         <div id="mobile-menu" class="hidden md:hidden border-b border-gray-700">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#achievements" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Achievements</a>
                 <a href="#experience" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Experience</a>
                 <a href="#skills" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
                 <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
@@ -154,8 +156,60 @@
             </div>
         </section>
 
+        <!-- Key Achievements Section -->
+        <section id="achievements" class="py-20 bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
+                    <!-- Star Icon -->
+                    <svg class="w-8 h-8 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.175 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                    Key Achievements
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <!-- Achievement 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-2">Infrastructure Standardization</h3>
+                        <p class="text-gray-300 text-sm">Standardized infrastructure across dev, stage, and prod using Terraform for Azure and Kubernetes.</p>
+                    </div>
+                    <!-- Achievement 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-2">Deployment Efficiency</h3>
+                        <p class="text-gray-300 text-sm">Reduced infrastructure deployment time by 60% using Jenkins CI/CD workflows.</p>
+                    </div>
+                    <!-- Achievement 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+                        <h3 class="text-xl font-semibold text-teal-400 mb-2">Observability Optimization</h3>
+                        <p class="text-gray-300 text-sm">Enhanced system reliability by optimizing observability with cloud-monitoring and logging tools.</p>
+                    </div>
+                </div>
+
+                <!-- Featured Project Highlight -->
+                <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-3">Featured Project: Menu Notifier</h3>
+                        <p class="text-lg text-teal-400 font-semibold mb-4">A Smart Restaurant Menu Notification System</p>
+                        <p class="text-gray-300 mb-6">
+                            This is a personal passion project built with the potential to become a real-time business solution. The goal is to provide a scalable service for restaurants, allowing them to manage and push dynamic menu updates to their customers instantly.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="http://www.menu-notifier.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-teal-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-teal-700 transition-colors">
+                                Visit Live Site
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                            <a href="https://github.com/PrashanthDev31/Menu-notifier" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-700 text-gray-200 px-5 py-2 rounded-lg text-sm font-medium hover:bg-gray-600 transition-colors">
+                                View on GitHub
+                                <svg class="w-4 h-4 ml-1.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Section -->
-        <section id="experience" class="py-20 bg-gray-800">
+        <section id="experience" class="py-20 bg-gray-900"> <!-- Changed bg-gray-800 to bg-gray-900 for alternating color -->
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-3xl mx-auto">
                     <h2 class="text-3xl font-bold text-white mb-12 flex items-center justify-center">
@@ -169,7 +223,7 @@
                         
                         <!-- Timeline Item 1 -->
                         <div class="relative pl-10">
-                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-800"></span>
+                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-900"></span>
                             <h3 class="text-xl font-semibold text-white">DevOps Engineer </h3>
                             <p class="text-md text-gray-400">Citibank | 07/2024 - Present</p>
                             <p class="text-md text-gray-400">Project 2 : AWS microservice applications</p>
@@ -183,7 +237,7 @@
                         
                         <!-- Timeline Item 2 -->
                         <div class="relative pl-10">
-                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-800"></span>
+                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-900"></span>
                              <p class="text-md text-gray-400">Project 1 : GCP Envrironment </p>
                             <p class="text-md text-gray-400">Citibank | 07/2023 - 07/2024</p>
                             <ul class="list-disc pl-5 space-y-2 mt-3 text-gray-300">
@@ -196,7 +250,7 @@
                         
                         <!-- Timeline Item 3 -->
                         <div class="relative pl-10">
-                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-800"></span>
+                            <span class="absolute -left-2.5 top-1 w-5 h-5 bg-teal-400 rounded-full border-4 border-gray-900"></span>
                             <h3 class="text-xl font-semibold text-white">DevOps Engineer</h3>
                             <p class="text-md text-gray-400">Pfizer | 06/2021 - 01/2023</p>
                             <ul class="list-disc pl-5 space-y-2 mt-3 text-gray-300">
@@ -213,7 +267,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="py-20">
+        <section id="skills" class="py-20 bg-gray-800"> <!-- Alternating color -->
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
                     <!-- CPU Icon -->
@@ -224,7 +278,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Skill Category 1 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg"> <!-- Changed bg-gray-800 to bg-gray-900 -->
                         <h3 class="text-xl font-semibold text-teal-400 mb-4">Cloud Providers</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">AWS</span>
@@ -234,7 +288,7 @@
                     </div>
                     
                     <!-- Skill Category 2 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg"> <!-- Changed bg-gray-800 to bg-gray-900 -->
                         <h3 class="text-xl font-semibold text-teal-400 mb-4">IaC & Config Management</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Terraform</span>
@@ -244,7 +298,7 @@
                     </div>
                     
                     <!-- Skill Category 3 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg"> <!-- Changed bg-gray-800 to bg-gray-900 -->
                         <h3 class="text-xl font-semibold text-teal-400 mb-4">Containers & Orchestration</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Docker</span>
@@ -254,7 +308,7 @@
                     </div>
                     
                     <!-- Skill Category 4 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg"> <!-- Changed bg-gray-800 to bg-gray-900 -->
                         <h3 class="text-xl font-semibold text-teal-400 mb-4">CI/CD</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Jenkins</span>
@@ -266,7 +320,7 @@
                     </div>
                     
                     <!-- Skill Category 5 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg"> <!-- Changed bg-gray-800 to bg-gray-900 -->
                         <h3 class="text-xl font-semibold text-teal-400 mb-4">Monitoring & Observability</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Prometheus</span>
@@ -279,7 +333,7 @@
                     </div>
                     
                     <!-- Skill Category 6 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg"> <!-- Changed bg-gray-800 to bg-gray-900 -->
                         <h3 class="text-xl font-semibold text-teal-400 mb-4">Scripting & Languages</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Python</span>
@@ -296,7 +350,7 @@
         </section>
         
         <!-- Projects Section -->
-        <section id="projects" class="py-20 bg-gray-800">
+        <section id="projects" class="py-20 bg-gray-900"> <!-- Alternating color -->
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
                     <!-- Code Icon -->
@@ -307,7 +361,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Project Card 1 -->
-                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105"> <!-- Changed bg-gray-900 to bg-gray-800 -->
                         <div class="p-6 flex-grow">
                             <h3 class="text-xl font-semibold text-white mb-2"> Kubernetes pipeline </h3>
                             <p class="text-gray-400 mb-4 text-sm">
@@ -315,11 +369,12 @@
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Terraform</span>
-                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">AWS</span>
-                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">GitLab CI</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">GCP</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Jenkins</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Kubernetes</span>
                             </div>
                         </div>
-                        <div class="p-4 bg-gray-800/50 border-t border-gray-700">
+                        <div class="p-4 bg-gray-700/50 border-t border-gray-600"> <!-- Adjusted border/bg color -->
                             <a href="https://github.com/PrashanthDev31/Kubernetes_Jenkins" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300">
                                 View on GitHub
                                 <!-- External Link Icon -->
@@ -329,19 +384,19 @@
                     </div>
                     
                     <!-- Project Card 2 -->
-                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105"> <!-- Changed bg-gray-900 to bg-gray-800 -->
                         <div class="p-6 flex-grow">
                             <h3 class="text-xl font-semibold text-white mb-2"> Infrastructure - Terraform </h3>
                             <p class="text-gray-400 mb-4 text-sm">
                                 Terraform + Jenkins: Automated GCP Infrastructure Deployment
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Kubernetes</span>
-                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Python</span>
-                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Prometheus</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Terraform</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Jenkins</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">GCP</span>
                             </div>
                         </div>
-                        <div class="p-4 bg-gray-800/50 border-t border-gray-700">
+                        <div class="p-4 bg-gray-700/50 border-t border-gray-600"> <!-- Adjusted border/bg color -->
                             <a href="https://github.com/PrashanthDev31/Terraform_jenkins" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300">
                                 View on GitHub
                                 <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -350,24 +405,28 @@
                     </div>
 
                     <!-- Project Card 3 -->
-                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105"> <!-- Changed bg-gray-900 to bg-gray-800 -->
                         <div class="p-6 flex-grow">
                             <h3 class="text-xl font-semibold text-white mb-2"> Menu Notifier </h3>
                             <p class="text-gray-400 mb-4 text-sm">
                                 Smart Restaurant Menu Notification System
                             </p>
-                            <a> www.menu-notifier.com </a>
+                            <a href="http://www.menu-notifier.com" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300 mb-4">
+                                Visit Live Site
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+D
+                            </a>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">GitHub Actions</span>
                                 <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Docker</span>
-                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Bash</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">AWS</span>
+                                <span class="bg-teal-800 text-teal-200 px-2 py-0.5 rounded text-xs">Python</span>
                             </div>
                         </div>
-                        <div class="p-4 bg-gray-800/50 border-t border-gray-700">
+                        <div class="p-4 bg-gray-700/50 border-t border-gray-600"> <!-- Adjusted border/bg color -->
                             <a href="https://github.com/PrashanthDev31/Menu-notifier" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-teal-400 hover:text-teal-300">
                                 View on GitHub
                                 <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-s
                             </a>
                         </div>
                     </div>
@@ -377,7 +436,7 @@ s
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-24">
+        <section id="contact" class="py-24 bg-gray-800"> <!-- Alternating color -->
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold text-white mb-6 flex items-center justify-center">
                     <!-- Send Icon -->
